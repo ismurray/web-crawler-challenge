@@ -13,13 +13,15 @@ By [Ian Murray](mailto:ismurray@bu.edu)
 4. Run tests using `grunt test`
 5. To see the output of the examples given in the challenge prompt, run
    `node ./lib/web-crawler`
-6. Enjoy!
+6. The code itself can all be seen in `./lib/web-crawler.js`, the tests can be seen
+   in `./spec/web-crawler.spec.js`
+7. Enjoy!
 
 
 ## Assumptions:
 1. Even if a link has multiple duplicates, it should only be listed in the
    `skipped` array once.
-  * Reasoning: In Example One, link `p4` has 2 duplicates, but is listed in the
+  - Reasoning: In the first example given, link `p4` has 2 duplicates, but is listed in the
     `Expected output` `skipped` array only once.
 2. Since the output format was not explicitly given, I assumed returning the
    `success`, `skipped`, and `error` arrays as properties of a single plain old
