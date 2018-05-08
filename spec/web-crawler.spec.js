@@ -156,8 +156,5 @@ describe('Web Crawler Example Internet Two', function () {
     it('returns the right number of error URLs', function () {
       expect(results).to.have.property('error').with.lengthOf(0)
     })
-    it('includes URL p1 in the error array', function () {
-      expect(results.skipped.indexOf('http://foo.bar.com/p1')).to.not.equal(-1)
-    })
   })
 })
